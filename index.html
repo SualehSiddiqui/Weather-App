@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/weather-app-logo.png" type="image/x-icon">
     <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="background-div">
         <div class="container">
-            <div class="weather-div"></div>
+            <div class="weather-div">
+                <div class="location-input">
+                    <input type="text" placeholder="Enter city" class="location-input-bar">
+                </div>
+                <div class="temprature"><span>32</span><span>°</span></div>
+                <div class="weather-image-div">
+                    <img src="images/sunny-weather.webp" alt="" class="weather-image">
+                </div>
+                <!-- <img src="images/haze.svg" alt="" class="imagesweather-type-img"> -->
+            </div>
+
         </div>
     </div>
 
-
-
+    <script src="font-awesome.js"></script>
     <script src="bootstrap.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
