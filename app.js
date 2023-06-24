@@ -5,6 +5,7 @@ let weatherType = document.getElementById("weather-type");
 let humidity = document.getElementById("humidity");
 let clouds = document.getElementById("clouds");
 let windSpeed = document.getElementById("wind-speed");
+let feelsLike = document.getElementById("feels-like");
 let weatherImg = document.getElementById("weather-img-div");
 
 let displayDate = document.getElementById("date");
@@ -22,6 +23,7 @@ navigator.geolocation.getCurrentPosition((location) => {
             humidity.innerHTML = `${res.main.humidity}%`;
             clouds.innerHTML = `${res.clouds.all}%`;
             windSpeed.innerHTML = `${res.wind.speed}km/h`;
+            feelsLike.innerHTML = `${Math.round(res.main.feels_like)}°`;
             // Thumder storm
             if (res.weather[0].id <= 232 && res.weather[0].id >= 200) {
                 weatherImg.innerHTML = `<img src="images/thunderstorms.svg" alt="thunderstorm" class="weather-image">`;

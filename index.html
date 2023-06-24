@@ -20,7 +20,8 @@
                 <div class="weather-div ms-auto me-auto mt-auto mb-auto">
                     <div class="location-input">
                         <input type="text" placeholder="Enter city" class="location-input-bar" id="weather-location">
-                        <div class="search-button" onclick="getWeather()"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="search-button" onclick="getWeather()"><i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
                     </div>
                     <div class="location-text">
                         <h3 id="city"></h3>
@@ -36,6 +37,16 @@
                         </div>
                     </div>
                     <div class="vertical-line"></div>
+                    <div class="weather-details">
+                        <div>
+                            <img src="images/feels-like.png" alt="wind speed" class="weather-details-img"
+                                id="weather-image">
+                            <span>Feels Like</span>
+                        </div>
+                        <div class="weather-details-value">
+                            <span id="feels-like"></span>
+                        </div>
+                    </div>
                     <div class="weather-details">
                         <div>
                             <img src="images/humidity.png" alt="haze" class="weather-details-img">
