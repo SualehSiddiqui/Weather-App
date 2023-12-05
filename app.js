@@ -154,7 +154,7 @@ let getWeather = () => {
                 }
             })
             .catch((rej) => {
-                
+
             })
     } else {
         Swal.fire({
@@ -165,3 +165,10 @@ let getWeather = () => {
         })
     }
 }
+
+weatherLocation.addEventListener("keydown", (code) => {
+    if(code.key == "Enter"){
+        getWeather()
+        weatherLocation.blur()
+    }
+})
